@@ -1,0 +1,12 @@
+
+1. db.imdb.find({title:"Bazaar"},{media:1}).pretty();
+
+2. db.imdb.find({title:"Bazaar"},{review:1,media:1}).pretty();
+
+3.db.imdb.find({title:"Bazaar"},{cast:1}).pretty();
+ 
+4. db.imdb.find({"review.user": "golu" }, {"review.$": 1});
+
+5.db.imdb.find({"cast.actor": "Shahid Kapoor"},{"cast.Skills.$": 1});
+
+6. db.imdb.find({  "cast.actor": "Amir Khan"},{"cast.Role.$": 1 });
